@@ -6,7 +6,7 @@
 
   <groupId>com.amelin.travel-adviser</groupId>
   <artifactId>Travel_Adviser</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.3</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -16,7 +16,16 @@
 
   <properties>
     <java.version>11</java.version>
+    <junit.version>4.13.2</junit.version>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <finalName>Travel_Adviser</finalName>

@@ -2,6 +2,7 @@ package com.amelin.traveladviser.domain.entity.geography;
 
 import com.amelin.traveladviser.domain.entity.base.AbstractEntity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -55,5 +56,16 @@ public class City extends AbstractEntity {
 
     public void setStations(Set<Station> stations) {
         this.stations = stations;
+    }
+
+    /**
+     * Adds specified station to the city station list
+     * @param station
+     */
+    public void addStation(final Station station) {
+        if (stations == null) {
+            stations = new HashSet<>();
+        }
+        stations.add(station);
     }
 }
