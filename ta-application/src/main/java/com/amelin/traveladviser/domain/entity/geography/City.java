@@ -1,9 +1,10 @@
 package com.amelin.traveladviser.domain.entity.geography;
 
 import com.amelin.traveladviser.domain.entity.base.AbstractEntity;
+import com.amelin.traveladviser.domain.entity.transport.TransportType;
+import com.amelin.traveladviser.domain.utils.CommonUtils;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Any locality that contains transport stations
@@ -25,6 +26,10 @@ public class City extends AbstractEntity {
      * locality
      */
     private Set<Station> stations;
+
+    public City(final String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -51,21 +56,33 @@ public class City extends AbstractEntity {
     }
 
     public Set<Station> getStations() {
-        return stations;
-    }
-
-    public void setStations(Set<Station> stations) {
-        this.stations = stations;
+        // Defensive programming, chapter 33
+        return CommonUtils.getSafeSet(stations);
     }
 
     /**
      * Adds specified station to the city station list
-     * @param station
+     * @param transportType
      */
-    public void addStation(final Station station) {
+    public Station addStation(final TransportType transportType) {
         if (stations == null) {
             stations = new HashSet<>();
         }
+        Station station = new Station(this, transportType);
         stations.add(station);
+
+        return station;
+    }
+
+    /**
+     * Removes specified station from the city station list
+     * @param station
+     */
+    public void removeStation(final Station station) {
+        Objects.requireNonNull(station, "station parameter is not initialized");
+        if (stations == null) {
+            return;
+        }
+        stations.remove(station);
     }
 }

@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="add the business entities">
-      <change afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/domain/entity/geography/CityTest.java" afterDir="false" />
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="add the unit test for the City class">
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/port/GeographicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/usecase/GeographicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/CommunicationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/ConfigException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/PersistenceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/base/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/base/FlowException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/flow/InvalidParameterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/StationCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/utils/CommonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-presentation/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/domain/entity/geography/CityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/domain/entity/geography/CityTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -61,8 +74,8 @@
       <recent name="C:\Users\acod10044\IdeaProjects\Travel_Adviser\ta-infrastructure" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="CityTest.testAddValidStationSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GeographicServiceImplTest.test">
+    <configuration name="CityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
@@ -72,7 +85,69 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
       <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.CityTest" />
-      <option name="METHOD_NAME" value="testAddValidStationSuccess" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityTest.testRemoveNullStationFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.CityTest" />
+      <option name="METHOD_NAME" value="testRemoveNullStationFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityTest.testRemoveStationFromEmptySetFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.CityTest" />
+      <option name="METHOD_NAME" value="testRemoveStationFromEmptySetFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeographicServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeographicServiceImplTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,7 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CityTest.testAddValidStationSuccess" />
+        <item itemvalue="JUnit.GeographicServiceImplTest.test" />
+        <item itemvalue="JUnit.GeographicServiceImplTest" />
+        <item itemvalue="JUnit.CityTest" />
+        <item itemvalue="JUnit.CityTest.testRemoveStationFromEmptySetFailure" />
+        <item itemvalue="JUnit.CityTest.testRemoveNullStationFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +172,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653917315227</updated>
       <workItem from="1653917320332" duration="2174000" />
-      <workItem from="1653982990949" duration="4456000" />
+      <workItem from="1653982990949" duration="11741000" />
+      <workItem from="1654066682917" duration="5613000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -102,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653986018100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add the unit test for the City class">
+      <created>1653987895155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653987895155</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +208,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add the business entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the business entities" />
+    <MESSAGE value="add the unit test for the City class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the unit test for the City class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

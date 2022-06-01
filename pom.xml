@@ -12,6 +12,7 @@
   <modules>
     <module>ta-infrastructure</module>
     <module>ta-application</module>
+    <module>ta-presentation</module>
   </modules>
 
   <properties>
