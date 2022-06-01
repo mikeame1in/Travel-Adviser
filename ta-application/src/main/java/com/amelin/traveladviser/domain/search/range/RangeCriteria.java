@@ -1,6 +1,6 @@
 package com.amelin.traveladviser.domain.search.range;
 
-import com.amelin.traveladviser.domain.exception.flow.InvalidParameterException;
+import com.amelin.traveladviser.domain.utils.Checks;
 
 /**
  * Pagination parameters for data retrieval operations
@@ -17,12 +17,9 @@ public class RangeCriteria {
     private final int rowCount;
 
     public RangeCriteria(int page, int rowCount) {
-        if (page < 0) {
-            throw new InvalidParameterException("Incorrect page index" + page);
-        }
-        if (rowCount < 0) {
-            throw new InvalidParameterException("Incorrect row count" + rowCount);
-        }
+        Checks.checkParameter(page <= 0, "Incorrect page index: " + page);
+        Checks.checkParameter(rowCount <= 0, "Incorrect row count: " + rowCount);
+
         this.page = page;
         this.rowCount = rowCount;
     }
