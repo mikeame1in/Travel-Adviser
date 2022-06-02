@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="add GeographicService and his impl, Search Criteria, Exceptions">
-      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/utils/Checks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/domain/utils/CheckTest.java" afterDir="false" />
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="add Checks for parameter checking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +155,8 @@
       <updated>1653917315227</updated>
       <workItem from="1653917320332" duration="2174000" />
       <workItem from="1653982990949" duration="11741000" />
-      <workItem from="1654066682917" duration="7238000" />
+      <workItem from="1654066682917" duration="8479000" />
+      <workItem from="1654146778542" duration="1220000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -181,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654072559543</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Checks for parameter checking">
+      <created>1654074290668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654074290668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +207,8 @@
     <MESSAGE value="add the business entities" />
     <MESSAGE value="add the unit test for the City class" />
     <MESSAGE value="add GeographicService and his impl, Search Criteria, Exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add GeographicService and his impl, Search Criteria, Exceptions" />
+    <MESSAGE value="add Checks for parameter checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Checks for parameter checking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
