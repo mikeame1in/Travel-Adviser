@@ -9,15 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="Jenkins test">
-      <change afterPath="$PROJECT_DIR$/ta-application/src/test/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ta-presentation/src/main/java/com/amelin/traveladviser/app/rest/service/CityResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ta-presentation/src/main/java/com/amelin/traveladviser/app/rest/service/config/JerseyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="app test run was successful">
+      <change afterPath="$PROJECT_DIR$/ta-presentation/src/test/java/com/amelin/traveladvidser/app/rest/service/CityResourceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-infrastructure/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ta-presentation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/acod10044/IdeaProjects/Travel_Adviser",
+    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-9-51",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,7 +78,7 @@
       <recent name="C:\Users\acod10044\IdeaProjects\Travel_Adviser\ta-infrastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.64">
+  <component name="RunManager" selected="JUnit.CityResourceTest.testFindCitiesSuccess">
     <configuration name="CheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
@@ -101,6 +95,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CityResourceTest.testFindCitiesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-presentation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladvidser.app.rest.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladvidser.app.rest.service" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladvidser.app.rest.service.CityResourceTest" />
+      <option name="METHOD_NAME" value="testFindCitiesSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
@@ -112,22 +122,6 @@
       <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
       <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.CityTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CityTest.testRemoveStationFromEmptySetFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.CityTest" />
-      <option name="METHOD_NAME" value="testRemoveStationFromEmptySetFailure" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -251,20 +245,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CityResourceTest.testFindCitiesSuccess" />
       <item itemvalue="JUnit.CheckTest" />
       <item itemvalue="JUnit.CityTest" />
-      <item itemvalue="JUnit.CityTest.testRemoveStationFromEmptySetFailure" />
       <item itemvalue="JUnit.GeographicServiceImplTest" />
       <item itemvalue="JUnit.GeographicServiceImplTest.test" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CityResourceTest.testFindCitiesSuccess" />
         <item itemvalue="JUnit.CheckTest" />
         <item itemvalue="JUnit.GeographicServiceImplTest.test" />
         <item itemvalue="JUnit.GeographicServiceImplTest" />
         <item itemvalue="JUnit.CityTest" />
-        <item itemvalue="JUnit.CityTest.testRemoveStationFromEmptySetFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +278,7 @@
       <workItem from="1654671821079" duration="3704000" />
       <workItem from="1654774536622" duration="6356000" />
       <workItem from="1655103478267" duration="6816000" />
-      <workItem from="1655204644177" duration="8298000" />
+      <workItem from="1655204644177" duration="11458000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -321,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654152379201</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="app test run was successful">
+      <created>1655213398192</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655213398192</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +345,8 @@
     <MESSAGE value="add GeographicService and his impl, Search Criteria, Exceptions" />
     <MESSAGE value="add Checks for parameter checking" />
     <MESSAGE value="Jenkins test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkins test" />
+    <MESSAGE value="app test run was successful" />
+    <option name="LAST_COMMIT_MESSAGE" value="app test run was successful" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
