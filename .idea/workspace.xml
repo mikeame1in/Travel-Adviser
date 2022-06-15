@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="app test run was successful">
-      <change afterPath="$PROJECT_DIR$/ta-presentation/src/test/java/com/amelin/traveladvidser/app/rest/service/CityResourceTest.java" afterDir="false" />
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="app integration test for CityResource">
+      <change afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/utils/ReflectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/domain/utils/ReflectionUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/ConfigException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/ConfigurationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/base/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/exception/base/AppException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-infrastructure/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ta-presentation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,25 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-9-51",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/acod10044/Downloads/sources-9-51&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.amelin.traveladviser.domain.model.geography" />
@@ -78,23 +84,7 @@
       <recent name="C:\Users\acod10044\IdeaProjects\Travel_Adviser\ta-infrastructure" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CityResourceTest.testFindCitiesSuccess">
-    <configuration name="CheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.domain.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.utils.CheckTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReflectionUtilTest.copyFieldsDestinationNullFailure">
     <configuration name="CityResourceTest.testFindCitiesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-presentation" />
       <extension name="coverage">
@@ -111,47 +101,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionUtilTest.copyFieldsDestinationNullFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.CityTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.utils.ReflectionUtilTest" />
+      <option name="METHOD_NAME" value="copyFieldsDestinationNullFailure" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeographicServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionUtilTest.copyFieldsSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.utils.ReflectionUtilTest" />
+      <option name="METHOD_NAME" value="copyFieldsSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeographicServiceImplTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionUtilTest.createInstanceSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.utils.ReflectionUtilTest" />
+      <option name="METHOD_NAME" value="createInstanceSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectionUtilTest.findSimilarFieldsSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.utils.ReflectionUtilTest" />
+      <option name="METHOD_NAME" value="findSimilarFieldsSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -245,20 +253,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ReflectionUtilTest.copyFieldsDestinationNullFailure" />
+      <item itemvalue="JUnit.ReflectionUtilTest.copyFieldsSuccess" />
+      <item itemvalue="JUnit.ReflectionUtilTest.createInstanceSuccess" />
+      <item itemvalue="JUnit.ReflectionUtilTest.findSimilarFieldsSuccess" />
       <item itemvalue="JUnit.CityResourceTest.testFindCitiesSuccess" />
-      <item itemvalue="JUnit.CheckTest" />
-      <item itemvalue="JUnit.CityTest" />
-      <item itemvalue="JUnit.GeographicServiceImplTest" />
-      <item itemvalue="JUnit.GeographicServiceImplTest.test" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionUtilTest.copyFieldsDestinationNullFailure" />
+        <item itemvalue="JUnit.ReflectionUtilTest.copyFieldsSuccess" />
+        <item itemvalue="JUnit.ReflectionUtilTest.findSimilarFieldsSuccess" />
+        <item itemvalue="JUnit.ReflectionUtilTest.createInstanceSuccess" />
         <item itemvalue="JUnit.CityResourceTest.testFindCitiesSuccess" />
-        <item itemvalue="JUnit.CheckTest" />
-        <item itemvalue="JUnit.GeographicServiceImplTest.test" />
-        <item itemvalue="JUnit.GeographicServiceImplTest" />
-        <item itemvalue="JUnit.CityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +286,8 @@
       <workItem from="1654671821079" duration="3704000" />
       <workItem from="1654774536622" duration="6356000" />
       <workItem from="1655103478267" duration="6816000" />
-      <workItem from="1655204644177" duration="11458000" />
+      <workItem from="1655204644177" duration="12065000" />
+      <workItem from="1655291369501" duration="5013000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -322,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655213398192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="app integration test for CityResource">
+      <created>1655216435725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655216435725</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +362,8 @@
     <MESSAGE value="add Checks for parameter checking" />
     <MESSAGE value="Jenkins test" />
     <MESSAGE value="app test run was successful" />
-    <option name="LAST_COMMIT_MESSAGE" value="app test run was successful" />
+    <MESSAGE value="app integration test for CityResource" />
+    <option name="LAST_COMMIT_MESSAGE" value="app integration test for CityResource" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
