@@ -7,10 +7,7 @@ import com.amelin.traveladviser.domain.entity.transport.TransportType;
  * @author Mike Amelin
  */
 public class StationCriteria {
-    /**
-     * City's name
-     */
-    private String name;
+    private String cityName;
     private TransportType transportType;
     /**
      * Station's address: street, zipCode, building number
@@ -18,7 +15,7 @@ public class StationCriteria {
     private String address;
 
     public StationCriteria(final String name) {
-        this.name = name;
+        this.cityName = name;
     }
 
     public StationCriteria(final TransportType transportType) {
@@ -35,12 +32,12 @@ public class StationCriteria {
         return new StationCriteria(name);
     }
 
-    public String getName() {
-        return name;
+    public String getCityName() {
+        return cityName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
     }
 
     public TransportType getTransportType() {

@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="app SimpleDTOTransformer.java and unit test for it. v0.1.2">
-      <change afterPath="$PROJECT_DIR$/ta-application/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="add logging. v0.1.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/transform/impl/SimpleDTOTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/transform/impl/SimpleDTOTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-presentation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/port/GeographicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/port/GeographicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/usecase/GeographicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/usecase/GeographicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/StationCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/StationCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/acod10044/IdeaProjects/Travel_Adviser&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-15-62",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.amelin.traveladviser.domain.model.geography" />
@@ -88,82 +87,82 @@
       <recent name="com.amelin.traveladviser.application.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SimpleDTOTransformerTest.testTransformCitySuccess">
-    <configuration name="SimpleDTOTransformerTest.testTransformCitySuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound">
+    <configuration name="GeographicServiceImplTest.testFindCityByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.transform.impl.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.transform.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.transform.impl.SimpleDTOTransformerTest" />
-      <option name="METHOD_NAME" value="testTransformCitySuccess" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="METHOD_NAME" value="testFindCityByIdNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDTOTransformerTest.testTransformNullDTOClassFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicServiceImplTest.testSearchStationsByCityNameSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.transform.impl.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.transform.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.transform.impl.SimpleDTOTransformerTest" />
-      <option name="METHOD_NAME" value="testTransformNullDTOClassFailure" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="METHOD_NAME" value="testSearchStationsByCityNameSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDTOTransformerTest.testUnTransformCitySuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicServiceImplTest.testSearchStationsByNameNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.transform.impl.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.transform.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.transform.impl.SimpleDTOTransformerTest" />
-      <option name="METHOD_NAME" value="testUnTransformCitySuccess" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="METHOD_NAME" value="testSearchStationsByNameNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDTOTransformerTest.testUnTransformNullCityFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.transform.impl.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.transform.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.transform.impl.SimpleDTOTransformerTest" />
-      <option name="METHOD_NAME" value="testUnTransformNullCityFailure" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="METHOD_NAME" value="testSearchStationsByTransportTypeNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDTOTransformerTest.testUnTransformNullEntityClassFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicServiceImplTest.testSearchStationsByTransportTypeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.transform.impl.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.transform.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.transform.impl.SimpleDTOTransformerTest" />
-      <option name="METHOD_NAME" value="testUnTransformNullEntityClassFailure" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
+      <option name="METHOD_NAME" value="testSearchStationsByTransportTypeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -257,20 +256,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SimpleDTOTransformerTest.testTransformCitySuccess" />
-      <item itemvalue="JUnit.SimpleDTOTransformerTest.testTransformNullDTOClassFailure" />
-      <item itemvalue="JUnit.SimpleDTOTransformerTest.testUnTransformCitySuccess" />
-      <item itemvalue="JUnit.SimpleDTOTransformerTest.testUnTransformNullCityFailure" />
-      <item itemvalue="JUnit.SimpleDTOTransformerTest.testUnTransformNullEntityClassFailure" />
+      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByNameNotFound" />
+      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound" />
+      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeSuccess" />
+      <item itemvalue="JUnit.GeographicServiceImplTest.testFindCityByIdNotFound" />
+      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByCityNameSuccess" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SimpleDTOTransformerTest.testTransformCitySuccess" />
-        <item itemvalue="JUnit.SimpleDTOTransformerTest.testUnTransformNullEntityClassFailure" />
-        <item itemvalue="JUnit.SimpleDTOTransformerTest.testUnTransformNullCityFailure" />
-        <item itemvalue="JUnit.SimpleDTOTransformerTest.testUnTransformCitySuccess" />
-        <item itemvalue="JUnit.SimpleDTOTransformerTest.testTransformNullDTOClassFailure" />
+        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound" />
+        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeSuccess" />
+        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByNameNotFound" />
+        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByCityNameSuccess" />
+        <item itemvalue="JUnit.GeographicServiceImplTest.testFindCityByIdNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +292,12 @@
       <workItem from="1655204644177" duration="12065000" />
       <workItem from="1655291369501" duration="8172000" />
       <workItem from="1655356904536" duration="8146000" />
-      <workItem from="1655365844850" duration="307000" />
+      <workItem from="1655365844850" duration="5768000" />
+      <workItem from="1655463964560" duration="709000" />
+      <workItem from="1655531832294" duration="108000" />
+      <workItem from="1655724060238" duration="1672000" />
+      <workItem from="1655811400445" duration="549000" />
+      <workItem from="1655982492916" duration="1232000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -358,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655358608928</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add logging. v0.1.3">
+      <created>1655366324328</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655366324328</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,17 +396,7 @@
     <MESSAGE value="app integration test for CityResource" />
     <MESSAGE value="app ReflectionUtil class for dto mapping" />
     <MESSAGE value="app SimpleDTOTransformer.java and unit test for it. v0.1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="app SimpleDTOTransformer.java and unit test for it. v0.1.2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add logging. v0.1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logging. v0.1.3" />
   </component>
 </project>

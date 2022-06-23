@@ -68,6 +68,7 @@ public class City extends AbstractEntity {
      * @param transportType
      */
     public Station addStation(final TransportType transportType) {
+        // Lazy init
         if (stations == null) {
             stations = new HashSet<>();
         }
