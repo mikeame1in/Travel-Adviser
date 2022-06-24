@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.amelin.travel-adviser</groupId>
         <artifactId>Travel_Adviser</artifactId>
-        <version>0.1.4</version>
+        <version>0.1.5</version>
     </parent>
     <artifactId>ta-presentation</artifactId>
     <packaging>war</packaging>
@@ -24,6 +24,12 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--    App Modules    -->
+        <dependency>
+            <groupId>com.amelin.travel-adviser</groupId>
+            <artifactId>ta-application</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--   Servlet     -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
