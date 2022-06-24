@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="refactored searchStations methods of the GeographicServiceImpl class">
-      <change afterPath="$PROJECT_DIR$/ta-presentation/src/main/java/com/amelin/traveladviser/app/rest/service/base/BaseResource.java" afterDir="false" />
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="added saveCity, findCityById methods and changed implementation of the findCities method in CityResource. v0.1.5">
+      <change afterPath="$PROJECT_DIR$/ta-presentation/src/main/java/com/amelin/traveladviser/app/rest/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ta-presentation/src/test/java/com/amelin/traveladvidser/app/rest/exception/GlobalExceptionHandlerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-presentation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-presentation/src/main/java/com/amelin/traveladviser/app/rest/service/CityResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/src/main/java/com/amelin/traveladviser/app/rest/service/CityResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-presentation/src/test/java/com/amelin/traveladvidser/app/rest/service/CityResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/src/test/java/com/amelin/traveladvidser/app/rest/service/CityResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-17-64",
+    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-18-65",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,23 +87,7 @@
       <recent name="com.amelin.traveladviser.application.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CityResourceTest.testSaveCitySuccess">
-    <configuration name="CityResourceTest.testFindCitiesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-presentation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.amelin.traveladvidser.app.rest.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladvidser.app.rest.service" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladvidser.app.rest.service.CityResourceTest" />
-      <option name="METHOD_NAME" value="testFindCitiesSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GlobalExceptionHandlerTest.testToResponseReturnServerError">
     <configuration name="CityResourceTest.testFindCityByIdInvalidId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-presentation" />
       <extension name="coverage">
@@ -168,6 +147,22 @@
       <option name="PACKAGE_NAME" value="com.amelin.traveladvidser.app.rest.service" />
       <option name="MAIN_CLASS_NAME" value="com.amelin.traveladvidser.app.rest.service.CityResourceTest" />
       <option name="METHOD_NAME" value="testSaveCitySuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlobalExceptionHandlerTest.testToResponseReturnServerError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-presentation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladvidser.app.rest.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladvidser.app.rest.exception" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladvidser.app.rest.exception.GlobalExceptionHandlerTest" />
+      <option name="METHOD_NAME" value="testToResponseReturnServerError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -261,20 +256,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CityResourceTest.testFindCitiesSuccess" />
       <item itemvalue="JUnit.CityResourceTest.testFindCityByIdInvalidId" />
       <item itemvalue="JUnit.CityResourceTest.testFindCityByIdNotFound" />
       <item itemvalue="JUnit.CityResourceTest.testFindCityByIdSuccess" />
       <item itemvalue="JUnit.CityResourceTest.testSaveCitySuccess" />
+      <item itemvalue="JUnit.GlobalExceptionHandlerTest.testToResponseReturnServerError" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GlobalExceptionHandlerTest.testToResponseReturnServerError" />
         <item itemvalue="JUnit.CityResourceTest.testSaveCitySuccess" />
         <item itemvalue="JUnit.CityResourceTest.testFindCityByIdInvalidId" />
         <item itemvalue="JUnit.CityResourceTest.testFindCityByIdNotFound" />
         <item itemvalue="JUnit.CityResourceTest.testFindCityByIdSuccess" />
-        <item itemvalue="JUnit.CityResourceTest.testFindCitiesSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +298,7 @@
       <workItem from="1655724060238" duration="1672000" />
       <workItem from="1655811400445" duration="549000" />
       <workItem from="1655982492916" duration="3418000" />
-      <workItem from="1656064255758" duration="5819000" />
+      <workItem from="1656064255758" duration="8161000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -389,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656066499277</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added saveCity, findCityById methods and changed implementation of the findCities method in CityResource. v0.1.5">
+      <created>1656070382801</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656070382801</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,6 +421,7 @@
     <MESSAGE value="add logging. v0.1.3" />
     <MESSAGE value="findCityById, searchStations methods added to GeographicService" />
     <MESSAGE value="refactored searchStations methods of the GeographicServiceImpl class" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored searchStations methods of the GeographicServiceImpl class" />
+    <MESSAGE value="added saveCity, findCityById methods and changed implementation of the findCities method in CityResource. v0.1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="added saveCity, findCityById methods and changed implementation of the findCities method in CityResource. v0.1.5" />
   </component>
 </project>
