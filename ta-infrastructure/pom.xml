@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.amelin.travel-adviser</groupId>
         <artifactId>Travel_Adviser</artifactId>
-        <version>0.1.3</version>
+        <version>0.1.4</version>
     </parent>
     <artifactId>ta-infrastructure</artifactId>
 </project>

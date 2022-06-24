@@ -9,15 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="add logging. v0.1.3">
+    <list default="true" id="9c521065-60fc-4ee6-993a-e15f3126befa" name="Changes" comment="findCityById, searchStations methods added to GeographicService">
+      <change afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/domain/entity/geography/StationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/port/GeographicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/port/GeographicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/usecase/GeographicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/usecase/GeographicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/StationCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/StationCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/search/range/RangeCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ta-application/src/test/java/com/amelin/traveladviser/application/usecase/GeographicServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ta-presentation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ta-presentation/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/application/usecase/GeographicServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/City.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ta-application/src/main/java/com/amelin/traveladviser/domain/entity/geography/Station.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -59,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-15-62",
+    "last_opened_file_path": "C:/Users/acod10044/Downloads/sources-16-63",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,7 +73,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.sourceCode.JSON"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -87,8 +92,8 @@
       <recent name="com.amelin.traveladviser.application.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound">
-    <configuration name="GeographicServiceImplTest.testFindCityByIdNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StationTest.testMatchByNameNotFound">
+    <configuration name="GeographicServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
@@ -98,40 +103,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
       <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
-      <option name="METHOD_NAME" value="testFindCityByIdNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GeographicServiceImplTest.testSearchStationsByCityNameSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
-      <option name="METHOD_NAME" value="testSearchStationsByCityNameSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GeographicServiceImplTest.testSearchStationsByNameNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ta-application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
-      <option name="METHOD_NAME" value="testSearchStationsByNameNotFound" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,17 +124,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeographicServiceImplTest.testSearchStationsByTransportTypeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StationTest.testMatchByNameNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ta-application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.amelin.traveladviser.application.usecase.*" />
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.application.usecase" />
-      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.application.usecase.GeographicServiceImplTest" />
-      <option name="METHOD_NAME" value="testSearchStationsByTransportTypeSuccess" />
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.StationTest" />
+      <option name="METHOD_NAME" value="testMatchByNameNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StationTest.testMatchByNameSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.StationTest" />
+      <option name="METHOD_NAME" value="testMatchByNameSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StationTest.testMatchCriteriaNotInitialized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ta-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.amelin.traveladviser.domain.entity.geography.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.amelin.traveladviser.domain.entity.geography" />
+      <option name="MAIN_CLASS_NAME" value="com.amelin.traveladviser.domain.entity.geography.StationTest" />
+      <option name="METHOD_NAME" value="testMatchCriteriaNotInitialized" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -256,20 +260,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByNameNotFound" />
+      <item itemvalue="JUnit.GeographicServiceImplTest" />
+      <item itemvalue="JUnit.StationTest.testMatchByNameNotFound" />
+      <item itemvalue="JUnit.StationTest.testMatchByNameSuccess" />
+      <item itemvalue="JUnit.StationTest.testMatchCriteriaNotInitialized" />
       <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound" />
-      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeSuccess" />
-      <item itemvalue="JUnit.GeographicServiceImplTest.testFindCityByIdNotFound" />
-      <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByCityNameSuccess" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.64" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StationTest.testMatchByNameNotFound" />
+        <item itemvalue="JUnit.StationTest.testMatchByNameSuccess" />
+        <item itemvalue="JUnit.StationTest.testMatchCriteriaNotInitialized" />
+        <item itemvalue="JUnit.GeographicServiceImplTest" />
         <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeNotFound" />
-        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByTransportTypeSuccess" />
-        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByNameNotFound" />
-        <item itemvalue="JUnit.GeographicServiceImplTest.testSearchStationsByCityNameSuccess" />
-        <item itemvalue="JUnit.GeographicServiceImplTest.testFindCityByIdNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +301,8 @@
       <workItem from="1655531832294" duration="108000" />
       <workItem from="1655724060238" duration="1672000" />
       <workItem from="1655811400445" duration="549000" />
-      <workItem from="1655982492916" duration="1232000" />
+      <workItem from="1655982492916" duration="3418000" />
+      <workItem from="1656064255758" duration="1844000" />
     </task>
     <task id="LOCAL-00001" summary="add the business entities">
       <created>1653986018100</created>
@@ -369,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655366324328</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="findCityById, searchStations methods added to GeographicService">
+      <created>1655983891021</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655983891021</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,6 +409,7 @@
     <MESSAGE value="app ReflectionUtil class for dto mapping" />
     <MESSAGE value="app SimpleDTOTransformer.java and unit test for it. v0.1.2" />
     <MESSAGE value="add logging. v0.1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logging. v0.1.3" />
+    <MESSAGE value="findCityById, searchStations methods added to GeographicService" />
+    <option name="LAST_COMMIT_MESSAGE" value="findCityById, searchStations methods added to GeographicService" />
   </component>
 </project>

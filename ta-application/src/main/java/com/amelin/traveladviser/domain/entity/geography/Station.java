@@ -2,6 +2,8 @@ package com.amelin.traveladviser.domain.entity.geography;
 
 import com.amelin.traveladviser.domain.entity.base.AbstractEntity;
 import com.amelin.traveladviser.domain.entity.transport.TransportType;
+import com.amelin.traveladviser.domain.search.StationCriteria;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Objects;
 
@@ -61,6 +63,29 @@ public class Station extends AbstractEntity {
 
     public TransportType getTransportType() {
         return transportType;
+    }
+
+    /**
+     * Verifies if current station matches specified criteria
+     * @param criteria
+     * @return
+     */
+    public boolean match(final StationCriteria criteria) {
+        Objects.requireNonNull(criteria, "Station criteria is not initialized");
+
+        if (!StringUtils.isEmpty(criteria.getCityName())) {
+            if (!city.getName().equals(criteria.getCityName())) {
+                return false;
+            }
+        }
+
+        if (criteria.getTransportType() != null) {
+            if (transportType != criteria.getTransportType()) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     @Override
